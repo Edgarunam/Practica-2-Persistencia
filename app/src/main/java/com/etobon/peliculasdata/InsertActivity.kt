@@ -8,8 +8,10 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.room.Room
 import com.etobon.peliculasdata.databinding.ActivityInsertBinding
 import com.etobon.peliculasdata.databinding.ActivityMainBinding
+import java.security.CodeSigner
 
 class InsertActivity : AppCompatActivity() {
     private lateinit var binding: ActivityInsertBinding
@@ -19,6 +21,10 @@ class InsertActivity : AppCompatActivity() {
         binding = ActivityInsertBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
+
         ArrayAdapter.createFromResource(this,R.array.Generos,android.R.layout.simple_spinner_item).also {
             adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
@@ -27,6 +33,20 @@ class InsertActivity : AppCompatActivity() {
         }
         SpinnerSelection(binding.spinnerGeneros)
 
+
+        val db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java, "database-name"
+        ).allowMainThreadQueries().build()
+
+        binding.btnInsert.setOnClickListener{
+            var Titulo:String = binding.etInsertTitulo.text.toString()
+            var Director:String = binding.etInsertDirector.text.toString()
+            var Año:Int = binding.etInsertFecha.text.toString().toInt()
+            var Calificacion:Int= binding.etInsertCalificacion.text.toString().toInt()
+            db.peliculaDao().insertALL(MovieItem(Titulo,Director,generoMovie,Año,Calificacion))
+            Toast.makeText(this@InsertActivity,"Pelicula Agregada",Toast.LENGTH_SHORT).show()
+        }
 
     }
 

@@ -4,18 +4,17 @@ import android.icu.text.Transliterator.Position
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class ProveAdapter(private val allMovies:List<MovieItem>):
         RecyclerView.Adapter<ProveAdapter.ViewHolder>() {
 
-    //val titles = arrayOf("Spiderman", "Harry Potyer")
-    //val Director = arrayOf("Director 1", "Director 2")
-    //val allMovies = listOf<MovieItem>()
-    // private var allMovies = List<MovieItem>(10)
 
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -24,6 +23,14 @@ class ProveAdapter(private val allMovies:List<MovieItem>):
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+       when(position){
+           0->{
+               holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.add_plus)
+           }
+       }
+
+
+
         holder.view.findViewById<TextView>(R.id.tvTituloPelicula).text =
             allMovies[position].TituloPelicula
         holder.view.findViewById<TextView>(R.id.tvDirectorPelicula).text =
