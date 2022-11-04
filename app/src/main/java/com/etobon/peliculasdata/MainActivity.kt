@@ -23,11 +23,12 @@ class MainActivity : AppCompatActivity() {
             applicationContext,
             AppDatabase::class.java, "database-name"
         ).allowMainThreadQueries().build()
-        val allMovies = db.peliculaDao().getAll()
+
+        var allMovies = db.peliculaDao().getAll()
 
 
         val recyclerView = findViewById<RecyclerView>(R.id.rvMainActivity)
-        val adapter = ProveAdapter()
+        val adapter = ProveAdapter(allMovies)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
 
