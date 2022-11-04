@@ -10,11 +10,11 @@ interface PeliculaDao {
 
     //Obtener Todos los Datos
     @Query("SELECT * FROM tabla_pelicula")
-    fun getAll(): List<entidadPelicula>
+    fun getAll(): List<MovieItem>
 
     @Insert
-    fun insertALL(vararg pelicula: entidadPelicula)
+    fun insertALL(vararg pelicula: MovieItem)
 
     @Delete
-    fun delete(pelicula: entidadPelicula)
+    fun delete(pelicula: MovieItem)
 }

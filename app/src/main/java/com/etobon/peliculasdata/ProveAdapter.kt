@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdaptadorRecycleView(private val peliculasrv: List<entidadPelicula>) :
-    RecyclerView.Adapter<AdaptadorRecycleView.ViewHolder>(){
+class ProveAdapter(private val peliculasrv: List<MovieItem>) :
+    RecyclerView.Adapter<ProveAdapter.ViewHolder>(){
 
     class ViewHolder (val view: View):RecyclerView.ViewHolder(view)
 
