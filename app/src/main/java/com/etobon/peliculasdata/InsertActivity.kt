@@ -48,6 +48,8 @@ class InsertActivity : AppCompatActivity() {
             Toast.makeText(this@InsertActivity,"Pelicula Agregada",Toast.LENGTH_SHORT).show()
         }
 
+
+
     }
 
     private fun SpinnerSelection(spinner: Spinner){

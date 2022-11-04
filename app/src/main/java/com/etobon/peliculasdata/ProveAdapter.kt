@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.content.contentValuesOf
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -52,9 +54,6 @@ class ProveAdapter(private val allMovies:List<MovieItem>):
        else if(allMovies[position].generoPelicula == "Terror"){
            holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.terror)
        }
-
-
-
 
 
 

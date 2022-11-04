@@ -32,23 +32,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            >
+            android:onClick="clicborrar">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
                 android:text="Director"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                />
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvDirectorPelicula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
                 android:text="Sam Reimi"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
         </RelativeLayout>
         <RelativeLayout
@@ -125,7 +125,6 @@
 
 
         </RelativeLayout>
-
 
 
 
