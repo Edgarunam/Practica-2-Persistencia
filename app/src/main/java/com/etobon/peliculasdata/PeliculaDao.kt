@@ -13,7 +13,7 @@ interface PeliculaDao {
     fun getAll(): List<MovieItem>
 
     @Insert
-    fun insertALL(vararg pelicula: MovieItem)
+    fun insertALL(vararg peliculas: MovieItem)
 
     @Delete
     fun delete(pelicula: MovieItem)

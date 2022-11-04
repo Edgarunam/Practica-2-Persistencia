@@ -29,7 +29,7 @@ class ProveAdapter:RecyclerView.Adapter<ProveAdapter.ViewHolder>() {
                 peliculasrv[position].generoPelicula
             holder.view.findViewById<TextView>(R.id.tvFechaPelicula).text =
                 peliculasrv[position].fechaPelicua.toString()
-            holder.view.findViewById<TextView>(R.id.tvCalificacion).text =
+            holder.view.findViewById<TextView>(R.id.tvCalificacion).text
                 peliculasrv[position].calificacionPelicula.toString()
 
 */

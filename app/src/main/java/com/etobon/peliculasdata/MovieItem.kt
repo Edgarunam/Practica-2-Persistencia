@@ -14,6 +14,3 @@ class MovieItem (
     @ColumnInfo(name = "calificacion_pelicula") val calificacionPelicula:Int?
 
         )
-{
-
-}
