@@ -24,38 +24,38 @@ class ProveAdapter(private val allMovies:List<MovieItem>):
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
        if(allMovies[position].generoPelicula == "Acción"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.action)
        }
        else if(allMovies[position].generoPelicula == "Aventura"){
-            holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+            holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.adventure)
         }
        else if(allMovies[position].generoPelicula == "Ciencia Ficción"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.cienciaficcion)
        }
 
        else if(allMovies[position].generoPelicula == "Comedia"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.comedia)
        }
 
        else if(allMovies[position].generoPelicula == "Drama"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.drama)
        }
        else if(allMovies[position].generoPelicula == "Fantasía"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.fantasia)
        }
        else if(allMovies[position].generoPelicula == "Musical"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.musical)
        }
        else if(allMovies[position].generoPelicula == "Suspenso"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.supenso)
        }
        else if(allMovies[position].generoPelicula == "Terror"){
-           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.terror)
        }
 
 
 
-        
+
 
 
 
