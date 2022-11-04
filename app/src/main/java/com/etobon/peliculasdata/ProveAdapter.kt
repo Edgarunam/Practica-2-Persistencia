@@ -23,11 +23,39 @@ class ProveAdapter(private val allMovies:List<MovieItem>):
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-       when(position){
-           0->{
-               holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.add_plus)
-           }
+       if(allMovies[position].generoPelicula == "Acción"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
        }
+       else if(allMovies[position].generoPelicula == "Aventura"){
+            holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+        }
+       else if(allMovies[position].generoPelicula == "Ciencia Ficción"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+       }
+
+       else if(allMovies[position].generoPelicula == "Comedia"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+       }
+
+       else if(allMovies[position].generoPelicula == "Drama"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+       }
+       else if(allMovies[position].generoPelicula == "Fantasía"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+       }
+       else if(allMovies[position].generoPelicula == "Musical"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+       }
+       else if(allMovies[position].generoPelicula == "Suspenso"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+       }
+       else if(allMovies[position].generoPelicula == "Terror"){
+           holder.view.findViewById<ImageView>(R.id.ivPoster).setImageResource(R.drawable.ic_launcher_background)
+       }
+
+
+
+        
 
 
 
