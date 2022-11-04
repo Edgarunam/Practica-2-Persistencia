@@ -6,6 +6,9 @@ plugins {
 android {
     namespace 'com.etobon.peliculasdata'
     compileSdk 32
+    viewBinding {
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "com.etobon.peliculasdata"
