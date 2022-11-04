@@ -24,21 +24,20 @@
             android:layout_alignParentEnd="true"
             android:layout_gravity="center"
             android:paddingBottom="20dp"
-            android:text="Spider-Man"
+            android:text="@string/spider_man"
             android:textColor="#000000"
             android:textStyle="bold" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:onClick="clicborrar">
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
-                android:text="Director"
+                android:text="@string/director"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
@@ -47,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:text="Sam Reimi"
+                android:text="@string/sam_reimi"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -60,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
-                android:text="Genero:"
+                android:text="@string/genero"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
@@ -68,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:text="Genero"
+                android:text="@string/genero2"
                 android:textStyle="bold"/>
 
         </RelativeLayout>
@@ -81,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
-                android:text="Estreno:"
+                android:text="@string/estreno"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
@@ -103,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
-                android:text="Calificación:"
+                android:text="@string/calificaci_n"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView

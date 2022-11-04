@@ -44,8 +44,19 @@ class InsertActivity : AppCompatActivity() {
             var Director:String = binding.etInsertDirector.text.toString()
             var Año:Int = binding.etInsertFecha.text.toString().toInt()
             var Calificacion:Int= binding.etInsertCalificacion.text.toString().toInt()
-            db.peliculaDao().insertALL(MovieItem(Titulo,Director,generoMovie,Año,Calificacion))
-            Toast.makeText(this@InsertActivity,"Pelicula Agregada",Toast.LENGTH_SHORT).show()
+
+
+            if(Titulo.isNotEmpty()&&Director.isNotEmpty()&& binding.etInsertFecha.text.isNotEmpty() && binding.etInsertCalificacion.text.isNotEmpty()){
+                db.peliculaDao().insertALL(MovieItem(Titulo,Director,generoMovie,Año,Calificacion))
+                Toast.makeText(this@InsertActivity,"Pelicula Agregada",Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this@InsertActivity,"Campos Faltantes",Toast.LENGTH_SHORT).show()
+            }
+
+
+
+
         }
 
 

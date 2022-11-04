@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">PeliculasData</string>
+    <string name="spider_man">Spider-Man</string>
+    <string name="director">Director</string>
+    <string name="sam_reimi">Sam Reimi</string>
+    <string name="genero">Genero:</string>
+    <string name="genero2">Genero</string>
+    <string name="estreno">Estreno:</string>
+    <string name="calificaci_n">Calificación:</string>
+    <string name="titulo">Titulo</string>
+    <string name="a_o">Año</string>
+    <string name="director2">Director</string>
+    <string name="calificacion2">Calificacion</string>
+    <string name="agregar_pelicula">Agregar Pelicula</string>
+    <string name="agregar">Agregar</string>
     <string-array name="Generos">
         <item>Accion</item>
         <item>Aventuras</item>
