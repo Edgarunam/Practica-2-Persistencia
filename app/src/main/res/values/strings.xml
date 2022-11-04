@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PeliculasData</string>
+    <string-array name="Generos">
+        <item>Accion</item>
+        <item>Aventuras</item>
+        <item>Ciencia Ficcion</item>
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>Fantasía</item>
+        <item>Musical</item>
+        <item>Suspenso</item>
+        <item>Terror</item>
+    </string-array>
 </resources>
