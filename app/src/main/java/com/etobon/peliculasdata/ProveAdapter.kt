@@ -6,27 +6,36 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ProveAdapter(private val peliculasrv: List<MovieItem>) :
-    RecyclerView.Adapter<ProveAdapter.ViewHolder>(){
+class ProveAdapter:RecyclerView.Adapter<ProveAdapter.ViewHolder>() {
 
-    class ViewHolder (val view: View):RecyclerView.ViewHolder(view)
+    val titles = arrayOf("Spiderman","Harry Potyer")
+    val Director = arrayOf("Director 1","Director 2")
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_plantilla_rv,parent,false)
-        return ViewHolder(view)
-    }
+        class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.view.findViewById<TextView>(R.id.tvTituloPelicula).text = peliculasrv[position].TituloPelicula
-        holder.view.findViewById<TextView>(R.id.tvDirectorPelicula).text = peliculasrv[position].directorPelicula
-        holder.view.findViewById<TextView>(R.id.tvGeneroPelicula).text = peliculasrv[position].generoPelicula
-        holder.view.findViewById<TextView>(R.id.tvFechaPelicula).text = peliculasrv[position].fechaPelicua.toString()
-        holder.view.findViewById<TextView>(R.id.tvCalificacion).text = peliculasrv[position].calificacionPelicula.toString()
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+            val view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.layout_plantilla_rv, parent, false)
+            return ViewHolder(view)
+        }
 
+        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+            holder.view.findViewById<TextView>(R.id.tvTituloPelicula).text =
+                titles[position]
+            holder.view.findViewById<TextView>(R.id.tvDirectorPelicula).text =
+               Director[position]
+            /*
+            holder.view.findViewById<TextView>(R.id.tvGeneroPelicula).text =
+                peliculasrv[position].generoPelicula
+            holder.view.findViewById<TextView>(R.id.tvFechaPelicula).text =
+                peliculasrv[position].fechaPelicua.toString()
+            holder.view.findViewById<TextView>(R.id.tvCalificacion).text =
+                peliculasrv[position].calificacionPelicula.toString()
 
+*/
+        }
 
-    }
+        override fun getItemCount(): Int = titles.size
 
-    override fun getItemCount(): Int = peliculasrv.size
 
 }
